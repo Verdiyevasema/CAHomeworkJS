@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CAROUSEL */
+#carouselExample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./image/WhatsApp\ Image\ 2023-12-17\ at\ 05.42.18.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carouselExample {
+  width: 80%;
+}
+
+/* 
+  img {
+    width: 100%;
+    height: 100px;
+  } */
+.btn {
+  background-color: red;
+  color: white;
+}
+
+/* 
+HEADER */
+.imgText {
+  display: flex;
+  column-gap: 2rem;
+}
+.imgDiv {
+  width: 70px;
+  height: 70px;
+  padding-top: 12px;
+}
+.headerText {
+  display: flex;
+  align-items: center;
+  color: #232323;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.headerNav {
+  display: flex;
+  column-gap: 3rem;
+  padding-top: 20px;
+}
+header {
+  background-color: rgb(236, 229, 229);
+}
+.headerNav a {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.iconsDiv i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* .About Section */
+.imgEmoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  column-gap: 3rem;
+}
+.about {
+  margin: 70px auto 0 auto;
+}
+.about h1 {
+  color: #232323;
+  font-weight: 700;
+  font-size: 50px;
+}
+.iconText {
+  background-color: #f2f2f2;
+  width: 35%;
+}
+.iconText i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  padding-top: 25px;
+  margin-bottom: 35px;
+  color: orangered;
+}
+.iconText h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 750;
+  padding: 0 50px;
+  color: #232323;
+}
+.iconText p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 450;
+  color: #232323;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+/* ACCARDION */
+.accardions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  margin-top: 80px;
+  width: 100%;
+}
+.accardionDiv {
+  width: 50%;
+}
+
+.fotoDiv img {
+  width: 100%;
+}
+
+.accardionDiv h1 {
+  font-size: 49px;
+  font-weight: 700;
+}
+.accardionDiv .onlyNatural {
+  font-weight: 400;
+  color: #626262;
+  font-size: 25px;
+}
+.accordion-item {
+  border-bottom: 1px solid black;
+}
+.accardionDiv .accordion-body {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+  color: #232323;
+}
+.accardionDiv h6 {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* TEXT SECTION */
+.textSection {
+  height: 50vh;
+  margin-top: 90px;
+}
+.textDiv .txtThings {
+  padding-top: 15%;
+}
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: auto;
+}
+.textDiv h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+}
+.textDiv a {
+  font-weight: 700;
+  font-size: 18px;
+  color: orangered;
+  text-decoration: none;
+}
+.textDiv a:hover {
+  text-decoration: 2px underline;
+  color: red;
+}
+
+/* DEVOTED SECTION */
+.imageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  column-gap: 5rem;
+  width: 100%;
+}
+.imageText .imageee {
+  width: 50%;
+}
+.imageText .imageee img {
+  width: 100%;
+}
+.imageText .textOne {
+  width: 50%;
+}
+.imageText .textOne h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+.imageText .textOne .premiumWith {
+  font-size: 25px;
+  font-weight: 400;
+  color: #626262;
+}
+.imageText .textOne .PhasellusFaucibus {
+  font-weight: 400;
+  color: #232323;
+  font-size: 18px;
+  line-height: 27px;
+}
+.imageText .textOne a {
+  font-weight: 800;
+  font-size: 18px;
+}
+.imageText .textOne button {
+  border: 2px solid orangered;
+  color: black;
+  background: transparent;
+  padding: 13px 23px;
+  width: 190px;
+  border-radius: 1.5px;
+}
+.imageText .textOne button:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/* FOTO PAGE */
+.twoCosmeticsFoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.leftCosmeticsFoto {
+  width: 50%;
+}
+.rightCosmeticsFoto {
+  width: 50%;
+  background-color: #f2f2f2;
+  height: 534px;
+  position: relative;
+}
+.leftCosmeticsFoto img {
+  width: 100%;
+}
+.rightCosmeticsFoto img {
+  width: 190px;
+  position: absolute;
+  top: 100px;
+  left: 160px;
+}
+.twoFotoSection {
+  margin-top: 15%;
+}
+.rightCosmeticsFoto .special {
+  position: absolute;
+  top: 320px;
+  left: 100px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #232323;
+  line-height: 33px;
+}
+.rightCosmeticsFoto .for {
+  position: absolute;
+  top: 360px;
+  left: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #232323;
+  line-height: 33px;
+}
+.rightCosmeticsFoto a {
+  position: absolute;
+  top: 410px;
+  left: 190px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #626262;
+  text-decoration: none;
+}
+.rightCosmeticsFoto a:hover {
+  text-decoration: underline 2px red;
+  color: red;
+}
+
+/* NOTHING ACTS */
+.textTwoImageSection {
+  margin-top: 15%;
+}
+.textTwoImageSection .textTwoImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  width: 100%;
+}
+.textTwoImageSection.textLeft {
+  width: 50%;
+}
+.textTwoImageSection h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+.onlyNatural {
+  font-weight: 400;
+  font-size: 23px;
+  color: #626262;
+}
+.phasellus1 {
+  font-weight: 400;
+  font-size: 16.84px;
+  color: #232323;
+  line-height: 27px;
+}
+.textTwoImageSection a {
+  font-weight: 800;
+  font-size: 18px;
+}
+.textTwoImageSection .textTwoImage .textLeft button {
+  color: black;
+  background: transparent;
+  border: 2px solid orangered;
+  width: 180px;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.textTwoImageSection .textTwoImage .textLeft button:hover {
+  background-color: orangered;
+  color: white;
+}
+.textTwoImageSection .textTwoImage.twoImageRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.textTwoImageSection .textTwoImage.twoImageRight img {
+  width: 10%;
+}
+.twoImageRight {
+  width: 50%;
+  column-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twoImageRight img {
+  width: 100%;
+}
+.dollarText {
+  position: relative;
+}
+.dollarText h6 {
+  position: absolute;
+  bottom: 45px;
+  left: 90px;
+  color: black;
+  font-weight: 700;
+  font-size: 17px;
+}
+.dollarText p {
+  position: absolute;
+  bottom: 5px;
+  left: 110px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #232323;
+  line-height: 25.26px;
+}
+
+/* BESTSELER SECTION  */
+.bestSellerSection {
+  margin-top: 12%;
+}
+.bestSellerSection h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+.bestSellerSection .cosmeticFotoParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+.cosmeticFotoParent .cosmeticFoto {
+  width: 33%;
+  position: relative;
+}
+.cosmeticFotoParent .cosmeticFoto img {
+  width: 100%;
+}
+.cosmeticFoto h6 {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+.cosmeticFoto p {
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  font-weight: 400;
+  font-size: 17px;
+  color: black;
+  line-height: 25.26px;
+}
+
+/* OUR PRODUCTS */
+.cosmeticFotoProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.cosmeticFoto2 {
+  position: relative;
+  width: 30%;
+}
+.cosmeticFoto2 img {
+  width: 100%;
+}
+.ourProduct {
+  margin-top: 10%;
+}
+.ourProduct h1 {
+  margin-bottom: 10%;
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+.cosmeticFoto2 h6 {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+  color: black;
+  font-weight: 700;
+  font-size: 17px;
+}
+.cosmeticFoto2 p {
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  font-weight: 400;
+  font-size: 17px;
+  color: black;
+  line-height: 25.26px;
+}
+
+/* WE ARE RECOMMENDED */
+
+.logoTextSection {
+  margin-top: 10%;
+}
+.logoTextSection h1 {
+  margin-bottom: 10%;
+  font-weight: 700;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+.fotoLogo {
+  margin-bottom: 10%;
+  display: flex;
+  column-gap: 2rem;
+}
+.fotoLogo div {
+  width: 13%;
+}
+.fotoLogo img {
+  width: 100%;
+}
+
+/* CONTACT US */
+
+.infoInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7rem;
+}
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+}
+.infoDiv a {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+}
+.infoDiv a:hover {
+  color: red;
+}
+.infoDiv p {
+  color: #626262;
+  left: 150px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 27px;
+}
+.infoDiv h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.inputDiv .email,
+.inputDiv .name {
+  height: 65px;
+  width: 272px;
+  border: 1px solid grey;
+  outline: none;
+  padding: 20px 25px;
+  font-weight: bold;
+}
+textarea {
+  font-weight: bold;
+  height: 130px;
+  border: 1px solid grey;
+  outline: none;
+  padding: 20px 25px;
+}
+.sendMessage {
+  margin-top: 20px;
+  color: black;
+  background: transparent;
+  border: 2px solid orangered;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.sendMessage:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10%;
+  background-color: #f2f2f2;
+}
+.footLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  column-gap: 4rem;
+}
+.footImageDiv {
+  width: 25%;
+}
+.navigation {
+  width: 25%;
+}
+.footImageDiv img {
+  width: 100%;
+}
+.footer {
+  padding-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.footLeft ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footLeft a,
+.footRight a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+}
+.footRight a:hover {
+  color: red;
+}
+.footLeft a:hover {
+  color: red;
+}
+.send {
+  height: 50px;
+  width: 90px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+.footRight input {
+  padding: 10px 15px;
+  outline: none;
+  font-weight: 400;
+  height: 50px;
+}
+.send:hover {
+  background-color: black;
+  color: white;
+}
+.footRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  width: 50%;
+}
+.footRight p {
+  color: #000000;
+  left: 150px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
