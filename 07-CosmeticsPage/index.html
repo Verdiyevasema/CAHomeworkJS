@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COSMETIC PAGE</title>
+    <link rel="icon" type="image/x-icon" href="./image/logo1-1-96x96.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,85 +47,119 @@
             </div>
           </div>
           <div class="headerNav">
-            <div class="navDiv">
-              <a href="home">HOME</a>
-              <a href="aboutUs">ABOUT US</a>
-              <a href="shop">SHOP</a>
-            </div>
-
-            <div class="iconsDiv">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <nav>
+              <ul class="navDiv">
+                <li><a href="home">HOME</a></li>
+                <li><a href="aboutUs">ABOUT US</a></li>
+                <li><a href="shop">SHOP</a></li>
+              </ul>
+  
+              <ul class="iconsDiv">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </nav>
+            <div class="menuIcon">
+              <i class="fa-solid fa-bars"></i>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- //CAROUSEL -->
 
-<!-- //CAROUSEL -->
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div>
-            <div class="row">
-              <div class="col-12 col-sm-6 d-flex align-items-center justify-content-center">
-                <h1>ONLY EXQUISITE REFRESHING</h1>
-                <p>Phosfluorescently maintain impactful process.</p>
-               <button class="btn">Read More</button>
-              </div>
+    <div class="carousel-section">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex align-items-center justify-content-center">
               <div class="col-12 col-sm-6">
-                <img src="./image/image3-800x800.jpg" class="d-block w-100" alt="...">
+                <h1>THE VIEW ON REFRESHING</h1>
+                <p>Phosfluorescently maintain impactful process.</p>
+                <button type="button" class="btn btn-outline-danger px-5 py-2">
+                  Danger
+                </button>
+              </div>
+              <div
+                class="col-12 col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./image/image1 (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-12 col-sm-6">
+                <h1>THE VIEW ON REFRESHING</h1>
+                <p>Phosfluorescently maintain impactful process.</p>
+                <button type="button" class="btn btn-outline-danger px-5 py-2">
+                  Danger
+                </button>
+              </div>
+              <div
+                class="col-12 col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./image/image1 (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-12 col-sm-6">
+                <h1>THE VIEW ON REFRESHING</h1>
+                <p>Phosfluorescently maintain impactful process.</p>
+                <button type="button" class="btn btn-outline-danger px-5 py-2">
+                  Danger
+                </button>
+              </div>
+              <div
+                class="col-12 col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./image/image1 (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
         </div>
-
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-              <h1>THE VIEW ON REFRESHING</h1>
-              <p>Phosfluorescently maintain impactful process.
-
-              </p>
-              <button class="btn">Read More</button>
-            </div>
-            <div class="col-12 col-sm-6">
-              <img src="./image/image1 (1).jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-              <h1>ONLY EXQUISITE REFRESHING</h1>
-              <p>Phosfluorescently maintain impactful process.
-
-              </p>
-              <button class="btn">Read More</button>
-            </div>
-          </div class="col-12 col-sm-6">
-          <img src="./image/image2.jpg" class="d-block w-100" alt="...">
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-
-
-
-<!-- //ABOUT SECTION -->
+    <!-- //ABOUT SECTION -->
     <section id="aboutSection">
       <div class="container">
         <div class="about">
@@ -136,27 +171,24 @@
               <i class="fa-regular fa-heart"></i>
               <h4>MADE WITH LOVE</h4>
               <p>
-                Magna at erat pretium mattis id non <br />
-                odio quisque nec tempor sapien quis <br />
-                eget ligula ispsum sagittis.
+                Magna at erat pretium mattis id non odio quisque nec tempor
+                sapien quis eget ligula ispsum sagittis.
               </p>
             </div>
             <div class="iconText">
               <i class="fa-regular fa-face-smile"></i>
               <h4>FOR YOUR HAPPINESS</h4>
               <p>
-                Magna at erat pretium mattis id non <br />
-                odio quisque nec tempor sapien quis <br />eget ligula ispsum
-                sagittis.
+                Magna at erat pretium mattis id non odio quisque nec tempor
+                sapien quis eget ligula ispsum sagittis.
               </p>
             </div>
             <div class="iconText">
               <i class="fa-regular fa-sun"></i>
               <h4>NATURAL CARE</h4>
               <p>
-                Magna at erat pretium mattis id non <br />
-                odio quisque nec tempor sapien quis <br />eget ligula ispsum
-                sagittis.
+                Magna at erat pretium mattis id non odio quisque nec tempor
+                sapien quiseget ligula ispsum sagittis.
               </p>
             </div>
           </div>
@@ -164,19 +196,13 @@
       </div>
     </section>
 
-
-
     <!-- //ACCARDION -->
     <section>
       <div class="container">
         <div class="accardions">
           <div class="accardionDiv">
             <div>
-              <h1>
-                COSMETIC <br />
-                YOU CAN BE <br />
-                PROUD OF
-              </h1>
+              <h1>COSMETIC YOU CAN BE PROUD OF</h1>
               <p class="onlyNatural">Only natural ingridients</p>
             </div>
             <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -199,9 +225,9 @@
                   aria-labelledby="panelsStayOpen-headingOne"
                 >
                   <div class="accordion-body">
-                    Morbi et magna at erat pretium mattis id non <br />
-                    odio quisque nectem por sapien quis sagittis <br />
-                    commodo ipsum arcu metus sed.
+                    Morbi et magna at erat pretium mattis id non odio quisque
+                    nectem por sapien quis sagittis commodo ipsum arcu metus
+                    sed.
                   </div>
                 </div>
               </div>
@@ -225,9 +251,9 @@
                   aria-labelledby="panelsStayOpen-headingTwo"
                 >
                   <div class="accordion-body">
-                    Morbi et magna at erat pretium mattis id non <br />
-                    odio quisque nectem por sapien quis sagittis <br />
-                    commodo ipsum arcu metus sed.
+                    Morbi et magna at erat pretium mattis id non odio quisque
+                    nectem por sapien quis sagittis commodo ipsum arcu metus
+                    sed.
                   </div>
                 </div>
               </div>
@@ -250,9 +276,9 @@
                   aria-labelledby="panelsStayOpen-headingThree"
                 >
                   <div class="accordion-body">
-                    Morbi et magna at erat pretium mattis id non <br />
-                    odio quisque nectem por sapien quis sagittis <br />
-                    commodo ipsum arcu metus sed.
+                    Morbi et magna at erat pretium mattis id non odio quisque
+                    nectem por sapien quis sagittis commodo ipsum arcu metus
+                    sed.
                   </div>
                 </div>
               </div>
@@ -265,49 +291,32 @@
       </div>
     </section>
 
-
-
     <!-- TEXT SECTION -->
     <section class="textSection">
       <div class="container">
         <div class="textDiv">
-          <br />
-          <br />
-          <br>
-
           <h1 class="txtThings">8 THINGS YOU MUST KNOW</h1>
           <h1>ABOUT COSMETIC</h1>
           <div>
             <a href="./index.html">GET CHECKLIST</a>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
       </div>
     </section>
 
-
-
-<!-- DEVOTED SECTION -->
+    <!-- DEVOTED SECTION -->
     <section>
       <div class="container">
-        <div class="ImageText">
+        <div class="imageText">
           <div class="imageee">
             <img src="./image/image1 (1).jpg" alt="" />
           </div>
           <div class="textOne">
-            <h1>
-              DEVOTED TO <br />
-              WONDERFUL <br />BEAUTY
-            </h1>
+            <h1>DEVOTED TO WONDERFUL BEAUTY</h1>
             <p class="premiumWith">With 30-minute premium treat</p>
-            <p class="PhasellusFaucibus">
+            <p class="phasellusFaucibus">
               Phasellus faucibus vehicula rutrum in ante ligula vel arcu quis
-              <br />
               lacinia posuere metus eget ligula ipsum maximus lobortis nec
-              <br />
               imperdiet.
             </p>
             <a href="./index.html"> <button>READ MORE</button></a>
@@ -316,9 +325,7 @@
       </div>
     </section>
 
-
-
-<!-- FOTO PAGE -->
+    <!-- FOTO PAGE -->
     <section class="twoFotoSection">
       <div class="container">
         <div class="twoCosmeticsFoto">
@@ -326,7 +333,9 @@
             <img src="./image/image2.jpg" alt="" />
           </div>
           <div class="rightCosmeticsFoto">
-            <img src="./image/image3-800x800.jpg" alt="" />
+            <div class="rightCosmeticsFoto-imgDiv">
+              <img src="./image/image3-800x800.jpg" alt="" />
+            </div>
             <h3 class="special">SPECIAL OFFERS</h3>
             <h3 class="for">FOR YOU ONLY</h3>
             <a href="./index.html">GET GIFTING</a>
@@ -335,23 +344,16 @@
       </div>
     </section>
 
-
-
-<!-- NOTHING ACTS -->
+    <!-- NOTHING ACTS -->
     <section class="textTwoImageSection">
       <div class="container">
         <div class="textTwoImage">
           <div class="textLeft">
-            <h1>
-              NOTHING ACTS <br />
-              FASTER THAN <br />CARE
-            </h1>
+            <h1>NOTHING ACTS FASTER THANCARE</h1>
             <p class="onlyNatural">Only natural ingridients</p>
             <p class="phasellus1">
               Phasellus faucibus vehicula rutrum in ante ligula vel arcu quis
-              <br />
               lacinia posuere metus eget ligula ipsum maximus lobortis nec
-              <br />
               imperdiet.
             </p>
             <a href="./index.html">
@@ -375,7 +377,7 @@
       </div>
     </section>
 
-<!-- BESTSELLER SECTION -->
+    <!-- BESTSELLER SECTION -->
     <section class="bestSellerSection">
       <div class="container">
         <div class="bestSeller">
@@ -407,8 +409,7 @@
       </div>
     </section>
 
-
-<!-- 
+    <!-- 
     OUR PRODUCTS
      -->
     <section class="ourProduct">
@@ -463,8 +464,7 @@
       </div>
     </section>
 
-
-<!-- 
+    <!-- 
     WE ARE RECOMMENDED -->
 
     <section class="logoTextSection">
@@ -486,7 +486,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- CONTACT US -->
 
@@ -522,10 +521,7 @@
       </div>
     </section>
 
-
-
-
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer>
       <div class="container">
@@ -579,7 +575,7 @@
               </nav>
             </div>
             <div>
-              <p>SUBSCRIBE TO OUR  <br>NEWSLETTER</p>
+              <p>SUBSCRIBE TO OUR <br />NEWSLETTER</p>
               <div class="inputBtn">
                 <input type="text" placeholder="Your Email" required />
                 <button class="send">Send</button>

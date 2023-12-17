@@ -11,60 +11,98 @@
   margin: 0 auto;
 }
 
+
+/* CAROUSEL */
+.carousel-section {
+  background-image: url("./image/WhatsApp\ Image\ 2023-12-17\ at\ 05.42.18.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgba(0,0,255,0.3)
+}
+
+#carouselExampleAutoplaying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* .btn {
+  background-color: red;
+  color: white;
+} */
+
+/* HEADER */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* CAROUSEL */
-#carouselExample {
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul {
+  margin: 0;
+}
+
+.iconsDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url("./image/WhatsApp\ Image\ 2023-12-17\ at\ 05.42.18.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  gap: 1rem;
 }
 
-#carouselExample {
-  width: 80%;
+.navDiv {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* 
-  img {
-    width: 100%;
-    height: 100px;
-  } */
-.btn {
-  background-color: red;
-  color: white;
+.header .imgDiv {
+  width: 80px;
+  height: 100px;
 }
 
-/* 
-HEADER */
+.header .imgDiv img {
+  width: 100%;   
+}
+
+.menuIcon {
+  display: none;
+  z-index: 2;
+}
+
 .imgText {
   display: flex;
   column-gap: 2rem;
 }
 .imgDiv {
-  width: 70px;
-  height: 70px;
-  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerText h3 {
+  margin: 0;
 }
 .headerText {
   display: flex;
   align-items: center;
   color: #232323;
-  padding-top: 20px;
   font-weight: 700;
   font-size: 13px;
 }
 .headerNav {
   display: flex;
-  column-gap: 3rem;
-  padding-top: 20px;
+  align-items: center;
 }
 header {
   background-color: rgb(236, 229, 229);
@@ -79,6 +117,43 @@ header {
   font-size: 30px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .menuIcon {
+    display: block;
+    font-size: 2rem;
+  }
+  nav {
+    display: none;
+    transition: 0.3s all;
+  }
+
+  .header .imgDiv {
+    width: 50px;
+  }
+  .imgText {
+    column-gap: 1rem;
+  }
+  .headerText h3 {
+    font-size: 18px;
+  }
+  nav.show {
+    display: block;
+    transition: 0.3s all;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+  }
+  nav.show .navDiv {
+    flex-direction: column;
+  }
+}
+
+
 
 /* .About Section */
 .imgEmoji {
@@ -176,10 +251,8 @@ header {
   height: 50vh;
   margin-top: 90px;
 }
-.textDiv .txtThings {
-  padding-top: 15%;
-}
 .textDiv {
+  padding: 10rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,7 +305,7 @@ header {
   font-weight: 400;
   color: #626262;
 }
-.imageText .textOne .PhasellusFaucibus {
+.imageText .textOne .phasellusFaucibus {
   font-weight: 400;
   color: #232323;
   font-size: 18px;
@@ -256,63 +329,30 @@ header {
 }
 
 /* FOTO PAGE */
-.twoCosmeticsFoto {
+.twoCosmeticsFoto{
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin-top: 4rem;
 }
 .leftCosmeticsFoto {
   width: 50%;
 }
-.rightCosmeticsFoto {
-  width: 50%;
-  background-color: #f2f2f2;
-  height: 534px;
-  position: relative;
-}
 .leftCosmeticsFoto img {
   width: 100%;
+} 
+.rightCosmeticsFoto {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.rightCosmeticsFoto img {
-  width: 190px;
-  position: absolute;
-  top: 100px;
-  left: 160px;
-}
-.twoFotoSection {
-  margin-top: 15%;
-}
-.rightCosmeticsFoto .special {
-  position: absolute;
-  top: 320px;
-  left: 100px;
-  font-weight: 700;
-  font-size: 30px;
-  color: #232323;
-  line-height: 33px;
-}
-.rightCosmeticsFoto .for {
-  position: absolute;
-  top: 360px;
-  left: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  color: #232323;
-  line-height: 33px;
-}
-.rightCosmeticsFoto a {
-  position: absolute;
-  top: 410px;
-  left: 190px;
-  font-weight: 700;
-  font-size: 16px;
-  color: #626262;
-  text-decoration: none;
-}
-.rightCosmeticsFoto a:hover {
-  text-decoration: underline 2px red;
-  color: red;
+.rightCosmeticsFoto .rightCosmeticsFoto-imgDiv {
+  width: 40%;
+} 
+.rightCosmeticsFoto .rightCosmeticsFoto-imgDiv img {
+  width: 100%;
 }
 
 /* NOTHING ACTS */
@@ -660,3 +700,5 @@ footer {
   font-size: 18px;
   line-height: 27px;
 }
+
+
