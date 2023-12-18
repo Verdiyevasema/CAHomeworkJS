@@ -493,8 +493,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
-  row-gap: 3rem;
+  gap: 2rem;
 }
 .cosmeticFoto2 {
   position: relative;
