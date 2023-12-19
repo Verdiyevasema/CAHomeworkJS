@@ -1,0 +1,40 @@
+{
+    "flowersPricing": [
+      {
+        "photo": "./image/b4.jpg",
+        "name": "Dahlia",
+        "price": 45,
+        "id": 1
+      },
+      {
+        "photo": "./image/b2.jpg",
+        "name": "Mazus",
+        "price": 45,
+        "id": 2
+      },
+      {
+        "photo": "./image/b3.jpg",
+        "name": "Pansies",
+        "price": 45,
+        "id": 3
+      },
+      {
+        "photo": "./image/b4.jpg",
+        "name": "Dahlia",
+        "price": 45,
+        "id": 4
+      },
+      {
+        "photo": "./image/b2.jpg",
+        "name": "Mazus",
+        "price": 45,
+        "id": 5
+      },
+      {
+        "photo": "./image/b3.jpg",
+        "name": "Pansies",
+        "price": 45,
+        "id": 6
+      }
+    ]
+}
