@@ -1,0 +1,206 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/sun.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(16, 99, 78, 0.9);
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header h2 {
+  color: white;
+}
+
+/* CAROUSEL */
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 0;
+}
+
+.carousel-item.cslImg1 {
+  background-image: url("../../image/sl1-967x725.jpg");
+}
+.carousel-item.cslImg2 {
+  background-image: url("../../image/sl7.jpg");
+}
+.carousel-item.cslImg3 {
+  background-image: url("../../image/sl4.jpg");
+}
+
+.carousel-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.carousel-text p {
+  font-size: 4rem;
+  color: #1b745e;
+}
+
+.carousel-text h4 {
+  color: #1b745e;
+}
+
+/* Local Florist  */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+.aboutText {
+  width: 50%;
+}
+
+.abouth2 {
+  font-size: 3rem;
+  color: #0c5b47;
+  font-family: "Inconsolata", monospace;
+}
+
+.aboutp {
+  font-size: 1.2rem;
+  color: #0c5b47;
+  font-family: "Quicksand", sans-serif;
+}
+.abouth6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  color: #0c5b47;
+}
+
+.abouth1 {
+  color: #0c5b47;
+  font-family: "Inconsolata", monospace;
+}
+
+.aboutImg {
+  display: flex;
+  width: 50%;
+}
+
+.aboutImg1 {
+  position: relative;
+  top: 60px;
+  left: 120px;
+  z-index: 2;
+}
+
+.aboutImg2 {
+  position: relative;
+}
+
+/* SERVICES */
+#servicesSection {
+  background-image: url("../../image/gallery1.jpg");
+}
+
+.servicesImg {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.servicesh2 {
+  font-family: "Quicksand", sans-serif;
+  color: #1b745e;
+}
+.servicesp {
+  font-size: 2.5rem;
+  color: #1b745e;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.ourMission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subOurMussion {
+  display: flex;
+}
+
+.ourMissionLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b745e;
+  color: white;
+}
+
+.ourMissionLeftTexts {
+  padding: 0 120px;
+}
+.ourMissionRigth {
+  width: 50%;
+}
+
+.products-icons {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b745e;
+}
+
+.icons-name {
+  font-size: 1.5rem;
+  color: #0c5b47;
+}
+
+.icons-name > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons-name > div i {
+  font-size: 2rem;
+}
