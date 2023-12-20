@@ -34,7 +34,7 @@ let flowerImg = document.querySelector(".flowerImg");
 let limit = 3;
 let copyData = [];
 let leadMoreBtn = document.querySelector(".leadMoreBtn");
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "http://localhost:8050";
 
 async function getData(endpoint) {
   const resp = await axios(`${BASE_URL}/${endpoint}`);
@@ -50,7 +50,9 @@ function drawCards(array) {
   console.log(array);
   array.forEach((el) => {
     flowerImg.innerHTML += `
+
     <div class="flowerImg1">
+    <i class="fa-regular fa-heart"></i>
     <img src="${el.photo}" alt="" />
     <div>
       <h6>${el.name}</h6>
