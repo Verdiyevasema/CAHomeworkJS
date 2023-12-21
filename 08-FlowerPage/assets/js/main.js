@@ -1,11 +1,3 @@
-// $("#owl-carousel").owlCarousel({
-//   loop: true,
-//   margin: 30,
-//   dots: true,
-//   nav: true,
-//   items: 2,
-// });
-
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
@@ -30,40 +22,124 @@ $(".owl-carousel").owlCarousel({
 let flowersPricing = document.querySelector(".flowersPricing");
 let container = document.querySelector(".container");
 let wonderfulBeauty = document.querySelector(".wonderfulBeauty");
-let flowerImg = document.querySelector(".flowerImg");
 let limit = 3;
-let copyData = [];
 let leadMoreBtn = document.querySelector(".leadMoreBtn");
-const BASE_URL = "http://localhost:8050";
 
-async function getData(endpoint) {
-  const resp = await axios(`${BASE_URL}/${endpoint}`);
-  console.log(resp.data);
-  copyData = resp.data;
-  drawCards(resp.data.slice(0, limit));
+const searchInput = document.querySelector(".search");
+const products = document.querySelector(".products");
+const favCount = document.querySelector(".fav-count");
+let arr;
+const sort = document.querySelector(".sort");
+
+let productsCopy = [];
+
+const favoritedProducts = getFavoritesFromLocaleStorage();
+const BASE_URL = "http://localhost:8000";
+
+calculateFavCount(favoritedProducts.length);
+
+async function getProducts(endPoint) {
+  const response = await axios(`${BASE_URL}/${endPoint}`);
+  console.log(response.data);
+  productsCopy = response.data;
+  arr = response.data;
+  // drawCards(resp.data.slice(0, limit));
+
+  drawCards(response.data);
 }
 
-getData("flowersPricing");
+getProducts("flowersPricing");
 
-function drawCards(array) {
-  flowerImg.innerHTML = "";
-  console.log(array);
-  array.forEach((el) => {
-    flowerImg.innerHTML += `
+function drawCards(data) {
+  products.innerHTML = "";
 
-    <div class="flowerImg1">
-    <i class="fa-regular fa-heart"></i>
-    <img src="${el.photo}" alt="" />
-    <div>
-      <h6>${el.name}</h6>
-      <p>$${el.price}</p>
-    </div>
-  </div>
-        `;
+  data.forEach((element) => {
+    const productCardElement = document.createElement("div");
+    productCardElement.className = "product-card";
+    const productTitleDivElement = document.createElement("div");
+    productTitleDivElement.className = "product-card-title";
+
+    const productNameElement = document.createElement("h3");
+    productNameElement.textContent = element.name;
+    const favIconElement = document.createElement("i");
+
+    const favoritObj = favoritedProducts.find((item) => item.id === element.id);
+
+    favIconElement.className = favoritObj
+      ? "fa-solid fa-heart"
+      : "fa-regular fa-heart";
+
+    const productPriceElement = document.createElement("p");
+    productPriceElement.innerHTML = `Price: <b>$ ${element.price}</b>`;
+
+    const productImageElement = document.createElement("img");
+
+    productImageElement.src = element.photo;
+
+    favIconElement.addEventListener("click", function () {
+      this.className === "fa-regular fa-heart"
+        ? (this.className = "fa-solid fa-heart")
+        : (this.className = "fa-regular fa-heart");
+
+      let favorites = getFavoritesFromLocaleStorage();
+
+      const favIndex = favorites.findIndex((item) => item.id === element.id);
+
+      if (favIndex === -1) {
+        favorites.push(element);
+      } else {
+        favorites.splice(favIndex, 1);
+      }
+
+      setProductToLocaleStorage(favorites);
+
+      calculateFavCount(favorites.length);
+    });
+
+    productTitleDivElement.append(favIconElement);
+
+    productCardElement.append(
+      productTitleDivElement,
+      productImageElement,
+      productNameElement,
+      productPriceElement
+    );
+
+    products.append(productCardElement);
   });
 }
 
+function setProductToLocaleStorage(products) {
+  localStorage.setItem("favs", JSON.stringify(products));
+}
+
+function getFavoritesFromLocaleStorage() {
+  return JSON.parse(localStorage.getItem("favs")) ?? [];
+}
+
+function calculateFavCount(count) {
+  favCount.textContent = count;
+}
+
+sort.addEventListener("click", function () {
+  productsCopy.sort((a, b) =>
+    a.name.toLocaleLowerCase().localeCompare(b.name.toLocaleLowerCase())
+  );
+  productsCopy.sort((a, b) =>
+    b.name.toLocaleLowerCase().localeCompare(a.name.toLocaleLowerCase())
+  );
+});
+
+searchInput.addEventListener("input", function (e) {
+  e.preventDefault();
+  let filtered = arr.filter((item) =>
+    item.name.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  drawCards(filtered);
+  console.log(filtered);
+});
+
 leadMoreBtn.addEventListener("click", function () {
   limit += 3;
-  drawCards(copyData.slice(0, limit));
+  drawCards(productsCopy.slice(0, limit));
 });

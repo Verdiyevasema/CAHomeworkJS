@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "http://localhost:8000";
 const products = document.querySelector(".products");
 const favCount = document.querySelector(".fav-count");
 
@@ -27,7 +27,7 @@ function drawCards(data) {
 
     const productImageElement = document.createElement("img");
 
-    productImageElement.src = element.imageUrl;
+    productImageElement.src = element.photo;
 
     favIconElement.addEventListener("click", function () {
       let favorits = getFavoritesFromLocaleStorage();
@@ -58,3 +58,8 @@ function setProductToLocaleStorage(products) {
 function getFavoritesFromLocaleStorage() {
   return JSON.parse(localStorage.getItem("favs")) ?? [];
 }
+
+// if (product.count === 0) {
+//   btn.closest("tr").remove();
+//   favoritedProducts = favoritedProducts.filter((item) => item.product._id !== id);
+// }

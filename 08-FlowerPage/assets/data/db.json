@@ -1,37 +1,37 @@
 {
   "flowersPricing": [
     {
-      "photo": "./image/b4.jpg",
+      "photo": "./assets/image/b4.jpg",
       "name": "Dahlia",
       "price": 45,
       "id": 1
     },
     {
-      "photo": "./image/b2.jpg",
+      "photo": "./assets/image/b2.jpg",
       "name": "Mazus",
       "price": 45,
       "id": 2
     },
     {
-      "photo": "./image/b3.jpg",
+      "photo": "./assets/image/b3.jpg",
       "name": "Pansies",
       "price": 45,
       "id": 3
     },
     {
-      "photo": "./image/b4.jpg",
+      "photo": "./assets/image/b4.jpg",
       "name": "Dahlia",
       "price": 45,
       "id": 4
     },
     {
-      "photo": "./image/b2.jpg",
+      "photo": "./assets/image/b2.jpg",
       "name": "Mazus",
       "price": 45,
       "id": 5
     },
     {
-      "photo": "./image/b3.jpg",
+      "photo": "./assets/image/b3.jpg",
       "name": "Pansies",
       "price": 45,
       "id": 6
@@ -39,17 +39,15 @@
   ],
   "coffe": [
     {
-      "image": "./assets/img/2.jpg",
+      "image": "./assets/image/2.jpg",
       "name": "sdgdgg",
       "decription": "The seeds of the Coffea plant's fruits are separated to produce unroasted green coffee beans.",
-      "price": "",
+      "price": "25",
       "rating": "3",
-      "id": 2,
-      "description": "",
-      "userphoto": "./assets/img/undefined"
+      "id": 2
     },
     {
-      "image": "./assets/img/3.webp",
+      "image": "./assets/image/3.webp",
       "name": "Columbia Coffe",
       "decription": "The beans are roasted and then ground into fine particles typically steeped in hot water before being filtered out, producing a cup of coffee.",
       "price": "21",
@@ -57,7 +55,7 @@
       "id": 3
     },
     {
-      "image": "./assets/img/4.webp",
+      "image": "./assets/image/4.webp",
       "name": "French Press",
       "decription": "Though coffee is now a global commodity, it has a long history tied closely to food traditions around the Red Sea.",
       "price": "25",
@@ -65,7 +63,7 @@
       "id": 4
     },
     {
-      "image": "./assets/img/5.png",
+      "image": "./assets/image/5.png",
       "name": "Gratumeala coffe",
       "decription": "The earliest credible evidence of coffee drinking as the modern beverage appears in modern-day Yemen in southern Arabia in the middle of the 15th century in Sufi shrines, where coffee seeds were first roasted and brewed in a manner similar to how it is now prepared for drinking",
       "price": "23",
@@ -73,7 +71,7 @@
       "id": 5
     },
     {
-      "image": "./assets/img/6.jpg",
+      "image": "./assets/image/6.jpg",
       "name": "Spains coffe",
       "decription": "The coffee beans were procured by the Yemenis from the Ethiopian Highlands via coastal Somali intermediaries, and cultivated in Yemen.",
       "price": "33",
@@ -81,7 +79,7 @@
       "id": 6
     },
     {
-      "image": "./assets/img/7.gif",
+      "image": "./assets/image/7.gif",
       "name": "Azerbaijan coffe",
       "decription": "Despite sales of coffee reaching billions of dollars worldwide, farmers producing coffee beans disproportionately live in poverty.",
       "price": "45",
@@ -89,18 +87,11 @@
       "id": 7
     },
     {
-      "name": "French Press",
-      "description": "Though coffee is now a global commodity, it has a long history tied closely to food traditions around the Red Sea.",
-      "price": "25",
-      "userphoto": "./assets/img/coffee-brain-caffeine-neuroscincces.webp",
-      "id": 10
-    },
-    {
-      "name": "",
-      "description": "",
-      "price": "",
-      "userphoto": "./assets/img/undefined",
-      "id": 11
+      "name": "coffeee",
+      "description": "25",
+      "price": "C:\\fakepath\\background1-1-1085x595 (2).jpg",
+      "photo": "./assets/image/undefined",
+      "id": 8
     }
   ]
 }

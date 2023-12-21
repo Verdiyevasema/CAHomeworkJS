@@ -1,11 +1,12 @@
 let tBody = document.querySelector("tBody");
-const search = document.querySelector("#search");
-
+const searchInput = document.querySelector(".searchInput");
 const BASE_URL = "http://localhost:8000";
+let arr;
 
 async function getData(endPoint) {
-  const response = await axios(`${BASE_URL}/${endPoint}`);
-  drawTable(response.data);
+  const resp = await axios(`${BASE_URL}/${endPoint}`);
+  drawTable(resp.data);
+  arr = resp.data;
 }
 
 getData("coffe");
@@ -38,28 +39,11 @@ async function userDelete(id, btn) {
   await axios.delete(`${BASE_URL}/coffe/${id}`);
 }
 
-
-
-
-search.addEventListener("input", function (e) {
-  console.log(e.target.value);
-  getData(`search?coffe=&name=${e.target.value}`);
+searchInput.addEventListener("input", function (e) {
+  e.preventDefault();
+  let filtered = arr.filter((item) =>
+    item.name.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  drawTable(filtered);
+  console.log(filtered);
 });
-
-sort.addEventListener("click", function () {
-  let sorted;
-  if (this.innerText === "Ascending") {
-    sorted = suppliers.sort((a, b) => a.id - b.id);
-    this.innerText = "Descending";
-  } else if (this.innerText === "Descending") {
-    sorted = suppliers.sort((a, b) => b.id - a.id);
-
-    this.innerText = "Default";
-  } else {
-    sorted = suppliersCopy;
-    this.innerText = "Ascending";
-  }
-
-  drawTable(sorted);
-});
-

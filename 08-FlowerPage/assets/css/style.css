@@ -60,13 +60,13 @@ nav ul a {
 }
 
 .carousel-item.cslImg1 {
-  background-image: url("../../image/sl1-967x725.jpg");
+  background-image: url("../image/sl1-967x725.jpg");
 }
 .carousel-item.cslImg2 {
-  background-image: url("../../image/sl7.jpg");
+  background-image: url("../image/sl7.jpg");
 }
 .carousel-item.cslImg3 {
-  background-image: url("../../image/sl4.jpg");
+  background-image: url("../image/sl4.jpg");
 }
 
 .carousel-text {
@@ -138,7 +138,7 @@ nav ul a {
 
 /* SERVICES */
 #servicesSection {
-  background-image: url("../../image/gallery1.jpg");
+  background-image: url("../image/gallery1.jpg");
 }
 
 .servicesImg {
@@ -211,83 +211,114 @@ nav ul a {
 }
 
 /* Flowers Pricing */
-.flowerImg {
+#flowersPricing {
+  background-image: url("../image/1111.jpg");
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+ul {
+  display: flex;
+  gap: 3rem;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+.flowersPricing p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  color: #1b745e;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+}
+.flowersPricing h3 {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c5b47;
+  font-size: 45px;
+  font-family: "Quicksand", sans-serif;
+}
+#flowersPricing {
+  margin-top: 0px;
+}
+.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  column-gap: 3rem;
 }
-.flowerImg1 {
-  position: relative;
+.products .productDiv {
+  margin: 1%;
   width: 30%;
 }
-.flowerImg1 img {
+.products .productDiv img {
   width: 100%;
 }
-.flowersPricing {
-  margin-top: 10%;
+.search {
+  font-weight: bold;
+  height: 40px;
+  width: 300px;
+  font-family: "Crimson Text", serif;
 }
-.flowersPricing h1 {
-  margin-bottom: 10%;
-  font-weight: 700;
-  font-size: 50px;
-  color: #232323;
-  line-height: 53px;
-}
-
-.wonderfulBeauty h5 {
-  font-weight: 250;
-  font-size: 20px;
-  color: #0c5b47;
-  font-style: italic;
-  margin-top: 30px;
-  padding: 20px 0;
-}
-
-.wonderfulBeauty h2 {
-  font-weight: 350;
-  font-size: 55px;
-  color: #0c5b47;
-  margin-bottom: 20px;
-}
-
-.flowerImg1 h6 {
-  bottom: 60px;
-  left: 120px;
-  color: #0c5b47;
-  font-weight: 700;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-}
-.flowerImg1 p {
-  bottom: 30px;
-  left: 150px;
-  font-weight: 400;
-  font-size: 17px;
-  color: #0c5b47;
-  line-height: 25.26px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.leadMoreBtn {
-  margin: 20px;
+.searchDiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.text-center {
-  font-size: 3rem;
+.search {
+  font-style: italic;
+}
+.iconParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.flowersPricing {
-  background-image: url("../../image/background1-1-1085x595\ \(1\).jpg");
+.sort {
+  height: 6vh;
+  background-color: #1b745e;
+  color: white;
+}
+
+.sort:hover {
+  background-color: blueviolet;
+}
+
+.productDiv {
+  position: relative;
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 20px;
+  color: red;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+.iParent {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: red;
+}
+
+.products {
+  margin-top: 50px;
+}
+.fav-count {
+  font-size: 1.4rem;
 }
 
 /* Events Pricing */
