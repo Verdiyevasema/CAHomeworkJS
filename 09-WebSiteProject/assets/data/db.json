@@ -1,0 +1,22 @@
+{
+  "ourBestServices": [
+    {
+      "photo": "./assets/img/1.png",
+      "name": "Strategy Planning",
+      "text": "There are many variations of passages of lorem Ipsum available but the new majority have suffered.",
+      "id": 1
+    },
+    {
+      "photo": "./assets/img/2.png",
+      "name": "Insurance Service",
+      "text": "There are many variations of passages of lorem Ipsum available but the new majority have suffered.",
+      "id": 2
+    },
+    {
+      "photo": "./assets/img/3.png",
+      "name": "Audit&Evaluation",
+      "text": "There are many variations of passages of lorem Ipsum available but the new majority have suffered.",
+      "id": 3
+    }
+  ]
+}
