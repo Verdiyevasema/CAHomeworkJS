@@ -16,8 +16,7 @@
 /* FIRST SECTION */
 .firstSectionn {
   background-color: #0d2d3e;
-  position: fixed;
-  z-index: 3;
+
   width: 100%;
 }
 
@@ -26,8 +25,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0d2d3e;
-  position: fixed;
-  z-index: 3;
+
   width: 100%;
 }
 
@@ -56,8 +54,6 @@ nav ul a {
 /* HEADER */
 header {
   background-color: white;
-  position: fixed;
-  z-index: 3;
   width: 100%;
 }
 
@@ -311,7 +307,6 @@ nav ul a {
   transition: all 0.7s;
 }
 
-
 /* BESTSELER SECTION  */
 .bestSellerSection {
   margin-top: 12%;
@@ -335,7 +330,7 @@ nav ul a {
 
 .bestSeller h2 {
   font-size: 60px;
-  color:#092c3f;
+  color: #092c3f;
   margin-bottom: 70px;
   font-weight: 700;
 }
@@ -346,14 +341,12 @@ nav ul a {
   margin-top: 30px;
 }
 
-
 .textt p {
   font-size: 20px;
-  color:#092c3f;
+  color: #092c3f;
   margin-bottom: 70px;
   font-weight: 400;
 }
-
 
 .bestSellerSection .cosmeticFotoParent {
   display: flex;
@@ -368,9 +361,6 @@ nav ul a {
 .cosmeticFotoParent .cosmeticFoto img {
   width: 100%;
 }
-
-
-
 
 /* Our Team */
 
@@ -395,14 +385,12 @@ nav ul a {
   column-gap: 3.5rem;
 }
 
-
 .usersSpecialty .usersFoto {
   width: 33%;
   overflow: hidden;
 }
 .usersSpecialty .usersFoto img {
   width: 100%;
-
 }
 .usersSpecialty .usersFoto img:hover {
   transform: scale(1.2);
@@ -443,7 +431,6 @@ nav ul a {
   font-size: 60px;
   color: #161e46;
 }
-
 
 /* FOOTER */
 footer {

@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "image": "./assets/img/1.books.jpg",
+      "name": "book1",
+      "decription": "The 50 great books on education.",
+      "price": "25",
+      "rating": "3",
+      "id": 1
+    },
+    {
+      "image": "./assets/img/2.png",
+      "name": "book2",
+      "decription": "The Best Higher Education Books Of 2020",
+      "price": "21",
+      "rating": "4",
+      "id": 2
+    },
+    {
+      "image": "./assets/img/3.pngg.jpg",
+      "name": "book3",
+      "decription": "What to Do If Your House is Overflowing with Books.",
+      "price": "25",
+      "rating": "5",
+      "id": 3
+    },
+    {
+      "image": "./assets/img/4.png",
+      "name": "book4",
+      "decription": "9 online book clubs to join now",
+      "price": "23",
+      "rating": "5",
+      "id": 4
+    },
+    {
+      "image": "./assets/img/6sfsfk.png",
+      "name": "book6",
+      "decription": "Books to inspire activism.",
+      "price": "45",
+      "rating": "7",
+      "id": 6
+    },
+    {
+      "image": "./assets/img/7hg.webp",
+      "name": "book7",
+      "description": "Harriet Books | Poetry Foundation",
+      "price": "25",
+      "rating": "3",
+      "id": 7
+    }
+  ]
+}
