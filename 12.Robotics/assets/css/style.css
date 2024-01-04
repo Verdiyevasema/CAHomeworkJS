@@ -1,0 +1,508 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/sun.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: #8a90ff;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul li a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header h2 {
+  color: white;
+}
+
+/* IMPROVED PRODUCTION */
+#improved-production {
+  background-image: url("../img/banner-bg.jpg");
+  height: 100vh;
+  width: 100%;
+}
+
+.improved-production {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.improved-production-left,
+.improved-production-image {
+  width: 50%;
+}
+
+.improved-production-left h1 {
+  font-size: 75px;
+  color: white;
+  margin-top: 120px;
+  font-weight: 350;
+}
+
+.improved-production-left p {
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.improved-production-button {
+  border: none;
+  padding: 13px 25px;
+}
+
+.improved-production-button:hover {
+  border: 1px solid white;
+  padding: 13px 25px;
+  background-color: #8a90ff;
+  color: white;
+}
+
+.improved-production-image {
+  width: 100%;
+  margin-top: 80px;
+}
+
+/*Featured Robotics Products to Show*/
+#featuredRobotics {
+  background-image: url("../image/1111.jpg");
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  gap: 3rem;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+.featuredRobotics p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: grey;
+  font-family: "Crimson Text", serif;
+  font-weight: 250;
+  margin-bottom: 20px;
+}
+.featuredRobotics h1 {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 17px;
+}
+#featuredRobotics {
+  margin-top: 0px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+.products .productDiv {
+  margin: 1%;
+  width: 30%;
+}
+.products .productDiv img {
+  width: 100%;
+}
+.search {
+  font-weight: bold;
+  height: 40px;
+  width: 300px;
+  font-family: "Crimson Text", serif;
+  padding: 0 13px;
+}
+.searchDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort {
+  height: 5vh;
+  background-color: #8a90ff;
+  color: white;
+}
+
+.sort:hover {
+  background-color: blue;
+}
+
+.productDiv {
+  position: relative;
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 20px;
+  color: red;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+.iParent {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: red;
+}
+
+.products {
+  margin-top: 50px;
+}
+.fav-count {
+  font-size: 1.4rem;
+}
+
+.leadMoreBtn {
+  padding: 15px 23px;
+  background-color: #8a90ff;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+.leadMoreBtn:hover {
+  padding: 15px 23px;
+  background-color: blue;
+}
+
+/* Globally Connected by Large Network */
+
+#global-connected {
+  background-color: #fdfdfd;
+}
+
+.global-connected {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* .global-connected-left,
+.global-connected-image {
+  width: 50%;
+} */
+
+.global-connected-left h1 {
+  margin-top: 150px;
+  font-weight: 700;
+}
+
+.global-connected-left h5 {
+  margin-top: 15px;
+  font-weight: 400;
+}
+.global-connected-left p {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 400;
+  color: grey;
+}
+
+.global-connected-button {
+  border: none;
+  padding: 13px 25px;
+  background-color: #8a90ff;
+  color: white;
+}
+
+.global-connected-button:hover {
+  border: 1px solid white;
+  padding: 13px 25px;
+  background-color: blue;
+  color: white;
+}
+
+.global-connected-image img {
+  width: 90%;
+  /* height: 80vh; */
+  margin-top: 80px;
+  margin-right: 700px;
+}
+
+/* .global-connected-right img {
+  width: 100%;
+} */
+
+/* BRAND NEW */
+#brandNew {
+  height: 100vh;
+  width: 100%;
+  margin-top: 170px;
+}
+
+.brandNew {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.brandNew-left,
+.brandNew-image {
+  width: 50%;
+}
+
+.brandNew-left h1 {
+  font-size: 50px;
+  color: black;
+  font-weight: 500;
+}
+.brandNew-left h6 {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.brandNew-left p {
+  color: grey;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.brandNew-button {
+  border: none;
+  padding: 13px 25px;
+  background-color: #8a90ff;
+  color: white;
+}
+
+.brandNew-button:hover {
+  border: 1px solid white;
+  padding: 13px 25px;
+  background-color: blue;
+  color: white;
+}
+
+.brandNew-image {
+  width: 100%;
+  margin-left: 130px;
+}
+
+/* Some Features that Made us Unique */
+
+#cards {
+  background-image: url("../img/feature-bg.jpg");
+  height: 100vh;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 400px;
+  text-align: center;
+}
+
+.cards-box h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 120px;
+}
+
+.cards-box p {
+  color: white;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+.card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  color: grey;
+}
+
+.iconText {
+  display: flex;
+}
+
+.iconText:hover {
+  color: #8a90ff;
+}
+
+.fa-regular {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.fa-solid {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* IMAGE SECTION */
+
+.logoSection {
+  margin-top: 10%;
+}
+.fotoLogo {
+  margin-bottom: 10%;
+  display: flex;
+  column-gap: 7rem;
+}
+.fotoLogo div {
+  width: 13%;
+}
+.fotoLogo img {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10%;
+  background-image: url("../img/footer-bg.jpg");
+}
+.footLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  column-gap: 7rem;
+}
+.topProduct {
+  color: white;
+}
+
+.text p {
+  color: white;
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.footRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  width: 50%;
+}
+
+.footRight img {
+  width: 120%;
+}
+
+.Newsletter h1 {
+  color: white;
+}
+
+.Newsletter p {
+  color: white;
+}
+
+.imgText {
+  margin-left: 550px;
+  margin-bottom: 50px;
+}
+.imgText h1 {
+  color: white;
+}
+
+.input {
+  width: 70%;
+  height: 7vh;
+  line-height: 38px;
+  border: none;
+  background: #fff;
+  font-weight: 300;
+  border-radius: 17px;
+  color: #777;
+  padding-left: 20px;
+}
+
+.inpBtn {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footerBtn {
+  background-color: #8a90ff;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 400;
+  width: 30%;
+  font-size: 13px;
+  padding: 7px 7px;
+}
