@@ -53,14 +53,19 @@ header {
   display: none;
 }
 
-@media screen and(max-width:767px) {
+@media only screen and (max-width:767px) {
+  header{
+    color: black;
+  }
   .menuIcon {
     display: block;
   }
-
-  .header nav ul {
+  body{
+    background-color: red;
+  }
+  .header nav{
+    font-size: 32px;
     display: none;
-    color: white;
   }
 }
 
