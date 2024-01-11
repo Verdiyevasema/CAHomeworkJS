@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
+    <script defer src="./assets/js/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Quicksand:wght@300;400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div id="header-top">
+        <div class="container">
+          <div class="header-top">
+            <div class="header-top-server">
+              <i class="fa-solid fa-server"></i>
+              <h2>Server</h2>
+            </div>
+            <div class="header-top-textIcon">
+              <div class="header-top-support">
+                <i class="fa-solid fa-headphones"></i>
+                <div class="header-top-text">
+                  <p>24/7 SUPPORT</p>
+                  <h6>1-800-200-3911</h6>
+                </div>
+              </div>
+              <div class="header-top-support">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="header-top-text">
+                  <p>EMAIL</p>
+                  <h6>mail@domain.com</h6>
+                </div>
+              </div>
+              <div class="header-top-support">
+                <i class="fa-brands fa-rocketchat"></i>
+                <div class="header-top-text">
+                  <p>LIVE CHAT</p>
+                  <h6>Chat With Us Now</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="header-bottom">
+        <div class="container">
+          <div class="header-bottom">
+            <div class="header-bottom-navBtn">
+              <div class="header-bottom-nav">
+                <nav>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Domain</a></li>
+                    <li><a href="#">Hosting^</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-bottom-btn">
+                <button class="registerBtn">Register</button>
+                <button class="loginBtn">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item cslImg1 active">
+          <div class="carousel-text">
+            <h1 class="customer text-center">24/7 Customer Support</h1>
+          </div>
+          <div class="text-center">
+            <button class="carousel-downloadBtn">Download</button>
+            <button class="carousel-touchBtn">Get In Touch</button>
+          </div>
+        </div>
+        <div class="carousel-item cslImg2">
+          <div class="carousel-text">
+            <h1 class="affordable text-center">Affordable Domains</h1>
+            <p class="text-center">from $7/year</p>
+          </div>
+          <div class="text-center">
+            <button class="carousel-downloadBtn">Download</button>
+            <button class="carousel-touchBtn">Get In Touch</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Different hosting platforms to suit every need! -->
+    <section id="cards">
+      <div class="container">
+        <div class="cards">
+          <h2 class="text-center">
+            <br />
+            <br />
+            <br />
+            Different hosting platforms to suit every need!
+          </h2>
+          <div class="cards-box">
+            <h1 class="text-center">Some Features that Made us Unique</h1>
+            <p class="text-center">
+              Who are in extremely love with eco friendly system.
+            </p>
+          </div>
+
+          <div class="cards-section">
+            <div class="card">
+              <div class="iconText">
+                <i
+                  class="fa-regular fa-paper-plane"
+                  style="color: greenyellow"
+                ></i>
+                <h2>Shared Hosting</h2>
+              </div>
+              <p>Plans start at $3.99/month</p>
+              <button>View Details</button>
+            </div>
+            <div class="card">
+              <div class="iconText">
+                <i class="fa-solid fa-plane" style="color: greenyellow"></i>
+                <h2>Dedicated Hosting</h2>
+              </div>
+              <p>Plans start at $6.99/month</p>
+              <button>View Details</button>
+            </div>
+            <div class="card">
+              <div class="iconText">
+                <i class="fa-solid fa-fire" style="color: greenyellow"></i>
+                <h2>Premium Hosting</h2>
+              </div>
+              <p>Plans start at $9.99/month</p>
+              <button>View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </section>
+
+    <!-- Satisfied Clients -->
+    <section id="satisfiedSection">
+      <br /><br />
+      <div class="container">
+        <div class="satisfiedSection">
+          <div class="satisfiedSection-left">
+            <h1>Satisfied Clients</h1>
+            <p>We are rated 4.99 / 5.00 (based on 4443 Reviews)</p>
+            <button class="satisfiedSection-button">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="ourProduct">
+      <div class="container">
+        <div class="productsSection">
+          <h1 class="text-center">Why Choose Us</h1>
+        </div>
+
+        <div class="chooseCards">
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/nastroyka.webp" alt="" />
+              <h6>High Quality Hardware</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/menu.png" alt="" />
+              <h6>Top Data Centers</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/plane.webp" alt="" />
+              <h6>Outstanding Speed</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/fire-305227_1280.png" alt="" />
+              <h6>Amazing Uptime</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/headphone.jpg" alt="" />
+              <h6>Best Support</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          <div class="choosecard">
+            <div class="chossecards-imgText">
+              <img src="./assets/img/contact.avif" alt="" />
+              <h6>Client Reviews</h6>
+            </div>
+            <div>
+              <p>
+                High Quality Hardware Lorem ipsum dolor sit amet consectetur is
+                a nice adipisicing elita ssumenda a similique perferendis
+                dolorem eos.
+              </p>
+            </div>
+          </div>
+          -->
+        </div>
+        <button class="leadMoreBtn">Load More</button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 5%;
+}
+/* HEADER */
+header {
+  background-color: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header-top-server {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-top-textIcon {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header-top-support {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header i {
+  font-size: 27px;
+  font-weight: 100;
+}
+
+.header-top-text p {
+  color: gray;
+}
+
+.header-top-text h6 {
+  font-weight: 400;
+}
+
+#header-bottom {
+  background-color: #4d4d4d;
+}
+
+.header-bottom-navBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-bottom-nav nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 33px;
+}
+
+.header-bottom-nav nav ul li a {
+  color: #ffffff99;
+  text-decoration: none;
+}
+.header-bottom-nav nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.registerBtn {
+  border: 2px solid greenyellow;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.registerBtn:hover {
+  border: 2px solid greenyellow;
+  padding: 13px 25px;
+  background-color: greenyellow;
+  color: white;
+}
+
+.loginBtn {
+  border: 2px solid greenyellow;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: greenyellow;
+  color: white;
+}
+
+.loginBtn:hover {
+  border: 2px solid green;
+  padding: 13px 25px;
+  background-color: green;
+  color: white;
+}
+
+/* CAROUSEL */
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15rem 0;
+}
+
+.carousel-item.cslImg1 {
+  background-image: url("../img/hero_bg_2.jpg");
+}
+.carousel-item.cslImg2 {
+  background-image: url("../img/hero_bg_1.jpg");
+}
+
+.carousel-text {
+  display: flex;
+  margin-left: 150px;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.carousel-text p {
+  font-size: 20px;
+  color: white;
+}
+
+.carousel-text .customer {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.carousel-text .affordable {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.carousel-downloadBtn {
+  background-color: #7cbd1e;
+  border: 2px solid #7cbd1e;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.carousel-downloadBtn:hover {
+  padding: 13px 25px;
+  background-color: #669c19;
+  border: 2px solid #5f9117;
+  color: white;
+}
+
+.carousel-touchBtn {
+  border: 2px solid white;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.carousel-touchBtn:hover {
+  border: 2px solid white;
+  padding: 13px 25px;
+  background-color: white;
+  color: black;
+}
+
+/* Different hosting platforms to suit every need! */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  padding: 70px 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+.card button {
+  width: 140px;
+  background-color: #7cbd1e;
+  border: 2px solid #7cbd1e;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.card button:hover {
+  padding: 13px 25px;
+  background-color: #669c19;
+  border: 2px solid #5f9117;
+  color: white;
+}
+
+.cards-box h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.cards-box p {
+  color: white;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  color: grey;
+}
+
+.iconText:hover {
+  transition: all 600ms;
+}
+
+.card i {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.cards h2 {
+  font-weight: 400;
+  color: rgb(109, 108, 108);
+  /* margin-top: 90px; */
+}
+
+@media screen and (max-width: 1023px) {
+  #cards {
+    height: 138vh;
+  }
+
+  .card {
+    width: 50%;
+  }
+  .cards-box {
+    padding-top: 57px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #cards {
+    height: 220vh;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+/* Satisfied Clients */
+#satisfiedSection {
+  background-image: url("../img/hero_bg_3.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.satisfiedSection {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.satisfiedSection-left {
+  width: 50%;
+}
+
+.satisfiedSection-left h1 {
+  font-size: 75px;
+  color: white;
+  margin-top: 120px;
+  font-weight: 350;
+}
+
+.satisfiedSection-left p {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.satisfiedSection-button {
+  width: 170px;
+  background-color: #7cbd1e;
+  border: 2px solid #7cbd1e;
+  padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.satisfiedSection-button:hover {
+  padding: 13px 25px;
+  background-color: #669c19;
+  border: 2px solid #5f9117;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .satisfiedSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .satisfiedSection-left h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  .satisfiedSection button {
+    margin: 15px;
+  }
+}
+
+/* Why Choose Us */
+.chooseCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.choosecard {
+  width: 30%;
+  border: 2px solid grey;
+  padding: 15px 20px;
+}
+
+.choosecard:hover {
+  width: 30%;
+  border: 2px solid greenyellow;
+  padding: 15px 20px;
+  background-color: greenyellow;
+  transition: all 400ms;
+}
+.choosecard img {
+  width: 100%;
+}
+.ourProduct {
+  margin-top: 10%;
+}
+.ourProduct h1 {
+  margin-bottom: 10%;
+  font-weight: 400;
+  font-size: 50px;
+  color: #232323;
+  line-height: 53px;
+}
+
+.choosecard h6 {
+  bottom: 60px;
+  left: 120px;
+  color: rgb(87, 86, 86);
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.choosecard h6:hover {
+  bottom: 60px;
+  left: 120px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.choosecard p {
+  bottom: 30px;
+  left: 150px;
+  font-weight: 400;
+  font-size: 17px;
+  color: gray;
+  line-height: 25px;
+}
+.choosecard p:hover {
+  bottom: 30px;
+  left: 150px;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+  line-height: 25px;
+}
+
+.choosecard img {
+  width: 40px;
+}
+
+.chossecards-imgText {
+  display: flex;
+}
+
+.chossecards-imgText h6 {
+  margin-top: 15px;
+}

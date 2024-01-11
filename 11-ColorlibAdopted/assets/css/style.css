@@ -244,7 +244,9 @@ header {
 }
 
 /* WAITING CHILDREN */
-
+#servicesSection{
+  background-color: red;
+}
 .servicesImg {
   padding: 20px 0;
   display: flex;
@@ -254,6 +256,10 @@ header {
   gap: 2px;
 }
 
+.waiting {
+  margin: 20px 0;
+  text-align: center;
+}
 .servicesh2 {
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -466,6 +472,7 @@ footer i:hover {
 footer {
   background-color: #bc5148;
 }
+
 .footerLeft p {
   color: rgb(223, 205, 205);
 }
