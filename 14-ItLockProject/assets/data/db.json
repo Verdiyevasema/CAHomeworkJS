@@ -1,0 +1,40 @@
+{
+  "globalBrands": [
+    {
+      "photo": "./assets/img/blog4.jpg",
+      "name": "Complexities of modern markets",
+      "text": "UniCode",
+      "id": "1"
+    },
+    {
+      "photo": "./assets/img/blog5.jpg",
+      "name": "Backup and recovery",
+      "text": "UniCode",
+      "id": "2"
+    },
+    {
+      "photo": "./assets/img/blog6.jpg",
+      "name": "Cyber security",
+      "text": "UniCode",
+      "id": "3"
+    },
+    {
+      "photo": "./assets/img/blog4.jpg",
+      "name": "Complexities of modern markets",
+      "text": "UniCode",
+      "id": "4"
+    },
+    {
+      "photo": "./assets/img/blog5.jpg",
+      "name": "Backup and recovery",
+      "text": "UniCode",
+      "id": "5"
+    },
+    {
+      "photo": "./assets/img/blog6.jpg",
+      "name": "Cyber security",
+      "text": "UniCode",
+      "id": "6"
+    }
+  ]
+}

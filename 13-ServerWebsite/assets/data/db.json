@@ -4,37 +4,37 @@
       "photo": "./assets/img/nastroyka.webp",
       "name": "High Quality Hardware",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 1
+      "id": "1"
     },
     {
       "photo": "./assets/img/menu.png",
       "name": "Top Data Centers",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 2
+      "id": "2"
     },
     {
       "photo": "./assets/img/plane.webp",
       "name": "Outstanding Speed",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 3
+      "id": "3"
     },
     {
       "photo": "./assets/img/fire-305227_1280.png",
       "name": "Amazing Uptime",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 4
+      "id": "4"
     },
     {
       "photo": "./assets/img/headphone.jpg",
       "name": "Best Support",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 5
+      "id": "5"
     },
     {
       "photo": "./assets/img/contact.avif",
       "name": "Client Reviews",
       "text": "High Quality Hardware Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos.",
-      "id": 6
+      "id": "6"
     }
   ]
 }
