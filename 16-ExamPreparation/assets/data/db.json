@@ -1,0 +1,16 @@
+{
+  "itCard": [
+    {
+      "id": "2",
+      "imageUrl": ".assets/img/slide-2.jpg",
+      "title": "Cyber security",
+      "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
+    },
+    {
+      "id": "3",
+      "imageUrl": "./assets/img/slide-3.jpg",
+      "title": "Cyber security",
+      "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
+    }
+  ]
+}
