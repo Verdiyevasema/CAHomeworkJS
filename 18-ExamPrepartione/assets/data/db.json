@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "photo": "./assets/img/1.jpg",
+      "name": "Senara",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "2",
+      "photo": "./assets/img/2.webp",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "3",
+      "photo": "./assets/img/3.jpg",
+      "name": "Farah",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "4",
+      "photo": "./assets/img/4.jpg",
+      "name": "Delilah",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "5",
+      "photo": "./assets/img/5.jpg",
+      "name": " Harriet",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "7",
+      "photo": "./assets/img/7.webp",
+      "name": "Jayla",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "8",
+      "photo": "./assets/img/8.webp",
+      "name": "Wild West Efery",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "9",
+      "photo": "./assets/img/9.webp",
+      "name": "Khloe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    }
+  ]
+}

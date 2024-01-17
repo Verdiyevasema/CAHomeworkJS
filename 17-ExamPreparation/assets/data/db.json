@@ -1,0 +1,52 @@
+{
+  "ourProducts": [
+    {
+      "photo": "./assets/img/model_1_bg.jpg",
+      "name": "Wild wont Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "1"
+    },
+    {
+      "photo": "./assets/img/model_2_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "2"
+    },
+    {
+      "photo": "./assets/img/model_3_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "3"
+    },
+    {
+      "photo": "./assets/img/model_4_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "4"
+    },
+    {
+      "photo": "./assets/img/product_1_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "5"
+    },
+    {
+      "photo": "./assets/img/model_5_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "id": "6"
+    },
+    {
+      "id": "c9c6",
+      "name": "Molestiae libero rem",
+      "text": "279",
+      "photo": "./assets/img/model_5_bg.jpg"
+    },
+    {
+      "id": "88dd",
+      "name": "bqbqbqbqbq",
+      "text": "527",
+      "photo": "./assets/img/model_2_bg.jpg"
+    }
+  ]
+}
