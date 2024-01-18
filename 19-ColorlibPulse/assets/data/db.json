@@ -1,0 +1,58 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "name": "Scrambled Eggs with ham",
+      "price": 9,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "2",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "price": 11,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "3",
+      "name": "Eggs Benedict",
+      "price": 6,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "4",
+      "name": "Soft-Boiled Organic Egg",
+      "price": 8,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "5",
+      "name": "Scrambled Eggs with ham",
+      "price": 9,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "6",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "price": 11,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "7",
+      "name": "Eggs Benedict",
+      "price": 6,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "8",
+      "name": "Soft-Boiled Organic Egg",
+      "price": 8,
+      "description": "with wild mushrooms and asparagus"
+    },
+    {
+      "id": "53eb",
+      "name": "Ut nemo debitis mini",
+      "description": "Non culpa elit non",
+      "price": "337"
+    }
+  ]
+}

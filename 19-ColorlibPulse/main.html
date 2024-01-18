@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+      integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
+
+    <script defer src="./assets/js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="header-top">
+        <div class="container">
+          <div class="header-top">
+            <div class="header-top-left">
+              <h1>colorlib🔸</h1>
+              <h3>+ PULSE</h3>
+            </div>
+            <div class="header-top-right">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <i class="fa-solid fa-mobile"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="header-bottom">
+        <div class="container">
+          <div class="header-bottom">
+            <div class="header-bottom-left">
+              <h3>Pulse</h3>
+              <nav>
+                <ul>
+                  <li><a href="./main.html">Home</a></li>
+                  <li><a href="./favorites.html">Favorites</a></li>
+                  <li><a href="./details.html">Details</a></li>
+                  <li><a href="./form.html">Form</a></li>
+                  <li><a href="./table.html">Table</a></li>
+                  <li><a href="#">Restaurant</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-bottom-right">
+              <h3>Reservations📞652-345 3222 11</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER SECTION -->
+    <section id="hero-banner">
+      <div class="hero-banner">
+        <div>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/slider-1 (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-container">
+                  <div class="carousel-text">
+                    <h1>Food and more</h1>
+                    <h6>By Chef Francis Smith</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/slider-2 (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-container">
+                  <div class="carousel-text">
+                    <h1>Special Dish</h1>
+                    <h6>By Chef Francis Smith</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/slider-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-container">
+                  <div class="carousel-text">
+                    <h1>Hygienic Food</h1>
+                    <h6>By Chef Francis Smith</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section id="welcomeSection">
+      <div class="container">
+        <div class="welcomeSection">
+          <div class="welcomeSection-first">
+            <div class="xett">____________________________</div>
+            <div class="text">WELCOME</div>
+            <div class="xett">____________________________</div>
+          </div>
+
+          <div class="textDiv">
+            <div class="text202">
+              <h3 class="text-center">2002</h3>
+              <p>
+                In vitae nisi aliquam, scelerisque leo a, volutpat <br />
+                sem. Vivamus rutrum dui fermentum eros <br />
+                hendrerit, id lobortis leo volutpat.
+              </p>
+            </div>
+            <div class="text2010">
+              <h3 class="text-center">2010</h3>
+              <p>
+                Stpat sem. Vivamus rutrum dui fermentum eros <br />
+                hendrerit, id lobortis leo volutpat. Maecenas <br />
+                sollicitudin est in libero pretium.
+              </p>
+            </div>
+            <div class="text2018">
+              <h3 class="text-center">2018</h3>
+              <p>
+                In vitae nisi aliquam, scelerisque leo a, volutpat <br />
+                sem. Vivamus rutrum dui fermentum eros <br />
+                hendrerit, id lobortis leo volutpat.
+              </p>
+            </div>
+          </div>
+          <div class="logoImg">
+            <img src="./assets/img/sign.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <div id="carouselExampleIndicators" class="carousel slide carouselParent">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/review-bg.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carouseltext">
+            <div class="carouselTextSection">
+              <div class="xett">_________________________________________</div>
+              <div class="text">Testimonials</div>
+              <div class="xett">_________________________________________</div>
+            </div>
+            <div class="vergul">
+              <p class="text-center">,,</p>
+            </div>
+            <p>
+              Integer sed facilisis eros. In iaculis rhoncus velit in malesuada.
+              In hac habitasse platea dictumst. Fusce erat ex, consectetur sit
+              amet ornare suscipit, porta et erat. Donec nec nisi in nibh
+              commodo laoreet. Mauris dapibus justo ut feugiat malesuada. Fusce
+              ultricies ante tortor, non vestibulum est feu-giat ut.
+            </p>
+            <p class="text-center tedtext">Ted Chapman, Client</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/review-bg.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carouseltext">
+            <div class="carouselTextSection">
+              <div class="xett">_________________________________________</div>
+              <div class="text">Testimonials</div>
+              <div class="xett">_________________________________________</div>
+            </div>
+            <div class="vergul">
+              <p class="text-center">,,</p>
+            </div>
+            <p>
+              Integer sed facilisis eros. In iaculis rhoncus velit in malesuada.
+              In hac habitasse platea dictumst. Fusce erat ex, consectetur sit
+              amet ornare suscipit, porta et erat. Donec nec nisi in nibh
+              commodo laoreet. Mauris dapibus justo ut feugiat malesuada. Fusce
+              ultricies ante tortor, non vestibulum est feu-giat ut.
+            </p>
+            <p class="text-center tedtext">Ted Chapman, Client</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/review-bg.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carouseltext">
+            <div class="carouselTextSection">
+              <div class="icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="xett">_________________________________________</div>
+              <div class="text">Testimonials</div>
+              <div class="xett">_________________________________________</div>
+            </div>
+            <div class="vergul">
+              <p class="text-center">,,</p>
+            </div>
+            <p>
+              Integer sed facilisis eros. In iaculis rhoncus velit in malesuada.
+              In hac habitasse platea dictumst. Fusce erat ex, consectetur sit
+              amet ornare suscipit, porta et erat. Donec nec nisi in nibh
+              commodo laoreet. Mauris dapibus justo ut feugiat malesuada. Fusce
+              ultricies ante tortor, non vestibulum est feu-giat ut.
+            </p>
+            <p class="text-center tedtext">Ted Chapman, Client</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Our Services -->
+
+    <section id="servicesSection">
+      <div class="container">
+        <div class="servicesSection">
+          <div class="servicesSection-first">
+            <div class="xett">____________________________</div>
+            <div class="text">Our Services</div>
+            <div class="xett">____________________________</div>
+          </div>
+
+          <div class="textDiv2">
+            <div class="Breakfast">
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h3 class="text-center">Breakfast</h3>
+              <p>
+                In vitae nisi aliquam, scelerisque <br />
+                leo a, volutpat sem. Vivamus <br />
+                rutrum dui fermentum.
+              </p>
+            </div>
+            <div class="Brunch">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGPb_QaNvC15YWilqVeqw5VzGX7Ow1fFMtWw&usqp=CAU"
+                alt=""
+              />
+              <h3 class="text-center">Brunch</h3>
+              <p>
+                Scelerisque leo a, volutpat sem. <br />
+                Vivamus rutrum dui fermentum eros <br />
+                hendrerit, id lobortis.
+              </p>
+            </div>
+            <div class="Lunch">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZM9e3yUaNIfmWCstVAW2ZB-eLCA5CVIJGog&usqp=CAU"
+                alt=""
+              />
+              <h3 class="text-center">Lunch</h3>
+              <p>
+                In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus
+                rutrum dui fermentum.
+              </p>
+            </div>
+            <div class="Dinner">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwIKk3irpf197IQSzuRF9NR-gmGqmEKpa0Q&usqp=CAU"
+                alt=""
+              />
+              <h3 class="text-center">Dinner</h3>
+              <p>
+                Aliquam, scelerisque leo a, volutpat <br />
+                sem. Vivamus rutrum dui <br />
+                fermentum eros hendreri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DINAMIK SECTION -->
+    <section id="ourMenu">
+      <input type="search" class="search" placeholder="search" />
+      <div class="container">
+        <div class="ourMenu">
+          <div class="menuSection-first">
+            <div class="xett">____________________________</div>
+            <div class="text">Our Menu</div>
+            <div class="xett">____________________________</div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Breakfast</a></li>
+              <li><a href="#">Brunch</a></li>
+              <li><a href="#">Lunch</a></li>
+              <li><a href="#">Dinner</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menuNav">
+          <!-- <div class="menuLeftRight">
+            <div class="menuLeft">
+              <h1>Scrambled Eggs with ham</h1>
+              <p>with wild mushrooms and asparagus ------------------ $9.00</p>
+              <h1>Scrambled Eggs in Puff Pastry</h1>
+              <p>with wild mushrooms and asparagus ------------------ $11.00</p>
+              <h1>Eggs Benedict</h1>
+              <p>with wild mushrooms and asparagus ------------------ $6.00</p>
+              <h1>Soft-Boiled Organic Egg</h1>
+              <p>with wild mushrooms and asparagus ------------------ $8.00</p>
+            </div>
+            <div class="menuright">
+              <h1>Scrambled Eggs with ham</h1>
+              <p>with wild mushrooms and asparagus ------------------ $9.00</p>
+              <h1>Scrambled Eggs in Puff Pastry</h1>
+              <p>with wild mushrooms and asparagus ------------------ $11.00</p>
+              <h1>Eggs Benedict</h1>
+              <p>with wild mushrooms and asparagus ------------------ $6.00</p>
+              <h1>Soft-Boiled Organic Egg</h1>
+              <p>with wild mushrooms and asparagus ------------------ $8.00</p>
+            </div>
+          </div> 
+            <div class="cardBtn">
+               <a href="#" class="edit">Edit</a>
+              <button class="viewBtn">View</button>
+            </div> -->
+
+        </div>
+      </div>
+      <button class="loadMoreBtn">Load More</button>
+    </section>
+
+    <!-- Contact Us & FOOTER -->
+    <section id="contactUs">
+      <div class="container">
+        <div class="infoInput">
+          <div class="inputDiv">
+            <div>
+              <input type="text" placeholder="Name" class="name" />
+              <input type="email" placeholder="Email" class="email" />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="53"
+                rows="3"
+                placeholder="Message"
+                class="textarea"
+              ></textarea>
+            </div>
+            <button class="sendMessage">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
