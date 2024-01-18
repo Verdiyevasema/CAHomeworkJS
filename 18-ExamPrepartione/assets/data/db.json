@@ -47,6 +47,12 @@
       "photo": "./assets/img/9.webp",
       "name": "Khloe",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "f2d9",
+      "name": "Suscipit dignissimos",
+      "text": "Odit enim recusandae",
+      "photo": "./assets/img/istockphoto-1416048929-170667a.webp"
     }
   ]
 }

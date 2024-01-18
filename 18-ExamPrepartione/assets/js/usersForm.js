@@ -3,33 +3,32 @@ const btn = document.querySelector(".btn");
 const inputs = document.querySelectorAll(".form-control");
 const form = document.querySelector("form");
 const id = new URLSearchParams(window.location.search).get("id");
-let BASE_URL = "http://localhost:8030/products";
-
-if (id) {
-  axios(`${BASE_URL}/${id}`).then((res) => {
-    inputs[1].value = res.data.name;
-    inputs[2].value = res.data.text;
-  });
-}
-form.addEventListener("submit", function (event) {
+let BASE_URL = "http://localhost:8030";
+form.addEventListener("submit", async function (event) {
   event.preventDefault();
   let obj = {
-    name: inputs[1].value,
-    text: inputs[2].value,
-    photo: `./assets/img/${inputs[3].value.split("\\")[2]}`,
+    name: inputs[0].value,
+    text: inputs[1].value,
+    photo: `./assets/img/${inputs[2].value.split("\\")[2]}`,
   };
-
-  if (id) {
-    axios.patch(`${BASE_URL}/${id}`, obj);
+  if (!editId) {
+    if (
+      inputs[0].value != "" &&
+      inputs[1].value != "" &&
+      inputs[2].value != ""
+    ) {
+      await axios.post(`${BASE_URL}/products`, obj);
+    } else {
+      alert("bos buraxmaq olmaz");
+    }
   } else {
-    axios.post(`${BASE_URL}`, obj);
+    await axios.patch(`${BASE_URL}/products/${editId}`, obj);
   }
-  window.location = "./usersPage.html";
 });
 
-onclick = "userEdit(${element.id},this)";
-
 async function userEdit(id, btn) {
-  await axios.PATCH(`${BASE_URL}/products/${id}`, obj);
-  window.location = "./usersPage.html";
+  editId = id;
+  const res = await axios(`${BASE_URL}/products/${id}`);
+  inputs[0].value = res.data.name;
+  inputs[1].value = res.data.text;
 }
