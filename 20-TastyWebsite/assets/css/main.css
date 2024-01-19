@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+.navBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  padding: 13px 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.header-button:hover {
+  padding: 13px 15px;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+}
+
+.header .navBtn nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.header .navBtn nav ul a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header .navBtn nav ul li a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.menuIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    color: white;
+    background-color: #404044;
+  }
+  .menuIcon {
+    display: block;
+    font-size: 35px;
+    color: white;
+  }
+  .header .navBtn nav {
+    display: none;
+  }
+}
+
+/* BANNER SECTION */
+
+#hero-banner
+  .hero-banner
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-container {
+  position: absolute;
+  left: 72%;
+  top: 45%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-text h1 {
+  color: white;
+  font-size: 80px;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-text button {
+  padding: 13px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 20%;
+  font-size: 20px;
+}
+.carousel-button:hover {
+  padding: 13px 20px;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-text h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+  }
+}
+
+/* Our chef cooks the most delicious food for you */
+
+.chefSection {
+  display: flex;
+  gap: 4rem;
+}
+
+.chefSection-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.chefSection-left {
+  width: 50%;
+}
+
+.chefSection-right {
+  margin-top: 8%;
+  /* margin-left: 10%; */
+  width: 50%;
+}
+
+.chefSection-right h1 {
+  margin-bottom: 65px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.chefSection-right p {
+  color: grey;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .chefSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* DINAMIK HISSE */
+#ourMenu {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.ourMenu-text-img {
+  display: flex;
+  gap: 2rem;
+  padding: 5px 7px;
+  background-color: white;
+  border: 2px solid #27272b;
+}
+#ourMenu input {
+  padding: 11px 15px;
+  margin-bottom: 20px;
+}
+
+.loadMoreBtn {
+  padding: 13px 15px;
+  margin-top: 20px;
+  background-color: #404044;
+  color: white;
+  border: 2px solid white;
+}
+
+.loadMoreBtn:hover {
+  padding: 13px 15px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+}
+
+.view {
+  border: 2px solid black;
+  padding: 5px 15px;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+}
+
+.ourMenu-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourMenu-text h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.ourMenu-text-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Recent Blog */
+
+.menu {
+  margin-top: 12%;
+  background-color: #f7f7f7;
+}
+
+.menu .recentBlogMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.recentBlog h5 {
+  font-size: 50px;
+  font-weight: 300px;
+  color: #404044;
+  padding: 50px 0;
+}
+
+.recentBlogMenu .recentBlogMenuImg {
+  width: 33%;
+  overflow: hidden;
+}
+
+.recentBlogMenu .recentBlogMenuImg img {
+  width: 100%;
+}
+
+.recentBlogMenu .recentBlogMenuImg img:hover {
+  transform: scale(1.2);
+  transition: all 0.6s ease-out 0s;
+}
+
+.recentBlogMenuImg h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  bottom: 50px;
+  left: 120px;
+  color: #404044;
+  font-weight: 500;
+  font-size: 23px;
+}
+
+.recentBlogMenuImg p {
+  font-weight: 300;
+  font-size: 17px;
+  margin-left: 17px;
+  margin-top: 20px;
+  color: gray;
+}
+
+@media screen and (max-width: 767px) {
+  .recentBlogMenu {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
+#footer {
+  background-color: #27272b;
+  height: 50vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.footerLeft,
+.footerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.2rem;
+}
+
+footer h5 {
+  color: white;
+  margin-top: 20px;
+}
+
+footer i {
+  color: blue;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid rgb(223, 205, 205);
+}
+
+footer i:hover {
+  background-color: #404044;
+  color: white;
+  cursor: pointer;
+}
+
+.footerLeft p {
+  color: grey;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+footer a:hover {
+  color: blue;
+}
+
+.footerRight p {
+  color: grey;
+}
+
+.footerEnd p {
+  margin-top: 40px;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  #footer {
+    height: 100vh;
+  }
+  .footer .footerLeft {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .footerRight {
+    display: flex;
+    flex-direction: column;
+  }
+}
