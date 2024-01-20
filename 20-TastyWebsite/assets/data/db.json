@@ -1,13 +1,6 @@
 {
   "menus": [
     {
-      "id": "1",
-      "photo": "assets/img/1.jpg",
-      "name": "1Asian Hoisin Pork",
-      "price": 49,
-      "description": "Meat, Potatoes, Rice, Tomatoe"
-    },
-    {
       "id": "2",
       "photo": "assets/img/2.jpg",
       "name": "2Asian Hoisin Pork",

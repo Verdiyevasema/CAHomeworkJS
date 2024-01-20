@@ -36,7 +36,7 @@ function drawProductCards(data) {
                 </div>
               </div>
             </div>
-            <div class="cardBtn">
+          <div class="cardBtn">
             <a class="view" href="details.html?id=${element.id}">View</a>
           </div>
           </div>`;

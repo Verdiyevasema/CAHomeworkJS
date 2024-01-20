@@ -16,7 +16,7 @@ function drawTable(data) {
   data.forEach((element) => {
     tBody.innerHTML += `
     <tr>
-         <th>${element.photo}</th>
+         <th><img src="${element.photo}" width="100px" height="100" alt=""/></th>
          <th>${element.name}</th>
          <th>${element.description}</th>
          <th>${element.price}</th>
