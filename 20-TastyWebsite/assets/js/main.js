@@ -3,9 +3,11 @@ const menus = document.querySelector(".menus");
 const loadMoreBtn = document.querySelector(".loadMoreBtn");
 const input = document.querySelector(".input");
 const search = document.querySelector(".search");
+const sortBtn = document.querySelector(".sortBtn");
 let limit = 3;
 let arr = [];
 let copyData = [];
+let data = [];
 const BASE_URL = "http://localhost:8030";
 
 async function getData() {
@@ -15,6 +17,7 @@ async function getData() {
     drawProductCards(resp.data.slice(0, limit));
     arr = resp.data;
     copyData = resp.data;
+    data = resp.data;
   } catch (error) {
     console.log(error);
   }
@@ -56,4 +59,16 @@ loadMoreBtn.addEventListener("click", function () {
   limit += 3;
   console.log(copyData);
   drawProductCards(copyData.slice(0, limit));
+});
+
+sortBtn.addEventListener("click", function () {
+  let sorted = [];
+  if (this.innerText === "Ascending") {
+    sorted = data.sort((a, b) => a.price - b.price);
+    this.innerText = "Descending";
+  } else if (this.innerText === "Descending") {
+    sorted = data.sort((a, b) => b.price - a.price);
+    this.innerText = "Ascending";
+  }
+  drawProductCards(sorted);
 });

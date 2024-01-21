@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: aqua;
+}
+
+.header-left-logo-nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header-left-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-left-logo-nav nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-left-logo-nav nav ul li a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 350;
+}
+
+.header-left-logo-nav nav ul li a:hover {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 350;
+  color: red;
+}
+
+.header-right-icon i {
+  font-size: 25px;
+  margin-left: 5px;
+  color: white;
+}
+.header-right-icon i:hover {
+  font-size: 25px;
+  margin-left: 5px;
+  color: red;
+}
+
+/* FORM */
+
+#formTable {
+  margin-top: 3%;
+}
+.deleteBtn {
+  padding: 11px 13px;
+  color: white;
+  background-color: red;
+}
+.deleteBtn:hover {
+  padding: 11px 13px;
+  color: white;
+  background-color: orangered;
+}
+.editBtn {
+  padding: 11px 13px;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+}
+.editBtn:hover {
+  padding: 11px 13px;
+  color: black;
+  background-color: greenyellow;
+  text-decoration: none;
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #212529;
+  margin-top: 8%;
+}
+
+.footer-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-image img {
+  width: 60px;
+}
+
+.footerDiv p {
+  color: #999999;
+  font-size: 20px;
+}
+
+.footerDiv h3 {
+  color: white;
+  margin-bottom: 45px;
+  font-size: 30px;
+}
+
+.footerDiv {
+  display: flex;
+  gap: 9rem;
+  padding-top: 9%;
+}
+
+.footerDiv .footerDiv-text .colorlib {
+  color: red;
+}
+
+.foooter-bottom h3 {
+  margin-top: 55px;
+}
+
+.footerEnd {
+  background-color: rgb(22, 21, 21);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  margin-top: 180px;
+}
+
+.footerEnd-icon i {
+  font-size: 30px;
+  margin-left: 40px;
+  color: white;
+}
+
+.footerEnd-text h6 {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-right: 40px;
+}

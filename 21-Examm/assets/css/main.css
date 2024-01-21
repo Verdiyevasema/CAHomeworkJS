@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-left-logo-nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header-left-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.header-left-logo-nav nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-left-logo-nav nav ul li a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 350;
+}
+
+.header-left-logo-nav nav ul li a:hover {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 350;
+  color: red;
+}
+
+.header-right-icon i {
+  font-size: 25px;
+  margin-left: 5px;
+  color: white;
+}
+.header-right-icon i:hover {
+  font-size: 25px;
+  margin-left: 5px;
+  color: red;
+}
+
+/* CAROUSEL */
+
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-text-btn {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+
+.carousel-text-btn h3 {
+  font-size: 70px;
+  font-weight: 300;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 130px;
+}
+
+.carousel-text-btn h1 {
+  font-size: 120px;
+  font-weight: 500;
+  color: white;
+}
+
+.carousel-text-btn button {
+  border: 3px solid salmon;
+  padding: 13px 25px;
+  background-color: white;
+  color: salmon;
+  margin-left: 250px;
+  margin-top: 30px;
+}
+
+.carousel-text-btn button:hover {
+  border: 3px solid white;
+  padding: 13px 25px;
+  background-color: salmon;
+  color: white;
+  transition: all 600ms;
+}
+
+.carouselBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DINAMIK SECTION */
+.restaurantFoodSec {
+  margin-top: 15%;
+}
+.restaurantFoodSec .card {
+  overflow: hidden;
+}
+.restaurantFoodSec .card img {
+  width: 100%;
+}
+.restaurantFoodSec .card img:hover {
+  transform: scale(1.2);
+  transition: all 0.9s;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card p {
+  color: #7d7c7c;
+}
+
+.viewBtn {
+  text-decoration: none;
+  color: white;
+  padding: 13px 15px;
+  background-color: green;
+}
+
+.viewBtn:hover {
+  text-decoration: none;
+  color: black;
+  padding: 13px 15px;
+  background-color: rgb(161, 249, 29);
+  transition: all 500ms;
+}
+
+/* THE BLOG */
+.blogSection {
+  margin-top: 15%;
+}
+.blogSection .blogCard {
+  overflow: hidden;
+}
+.blogSection .blogCard img {
+  width: 100%;
+}
+.blogSection .blogCard img:hover {
+  transform: scale(1.2);
+  transition: all 0.9s;
+}
+
+.blogCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.blogCard h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blogCard p {
+  color: #7d7c7c;
+}
+
+.blogCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogCardText h3 {
+  color: red;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.blogCardText h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #212529;
+  margin-top: 20%;
+}
+
+.footer-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-image img {
+  width: 60px;
+}
+
+.footerDiv p {
+  color: #999999;
+}
+
+.footerDiv h3 {
+  color: white;
+  margin-bottom: 45px;
+}
+
+.footerDiv {
+  display: flex;
+  gap: 9rem;
+  padding-top: 8%;
+}
+
+.footerDiv .footerDiv-text .colorlib {
+  color: red;
+}
+
+.foooter-bottom h3 {
+  margin-top: 55px;
+}
+
+.footerEnd {
+  background-color: rgb(22, 21, 21);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  margin-top: 90px;
+}
+
+.footerEnd-icon i {
+  font-size: 30px;
+  margin-left: 40px;
+  color: white;
+}
+
+.footerEnd-text h6 {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-right: 40px;
+}

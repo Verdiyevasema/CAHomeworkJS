@@ -1,0 +1,49 @@
+{
+  "restaurantFoodSec": [
+    {
+      "id": "1",
+      "image": "./assets/img/intro-01.jpg",
+      "name": "ROMANTIC RESTAURANT",
+      "description": "Phasellus lorem enim, luctus ut velit eget, con-vallis egestaseros.",
+      "title": "LEARN MORE ->",
+      "price": 1
+    },
+    {
+      "id": "2",
+      "image": "./assets/img/intro-04.jpg",
+      "name": "DELICIOUS FOOD",
+      "description": " Aliquam eget aliquam magna, quis posuere risus ac justo ipsumnibh urna",
+      "title": "LEARN MORE ->",
+      "price": 5
+    },
+    {
+      "id": "3",
+      "image": "./assets/img/intro-02.jpg",
+      "name": "RED WINES YOU LOVE",
+      "description": " Sed ornare ligula eget tortor tempor, quis porta tellus dictum.",
+      "title": "LEARN MORE ->",
+      "price": 25
+    },
+    {
+      "id": "26d0",
+      "name": "Hall Gonzalez",
+      "description": "Voluptas lorem ea ex",
+      "price": "86",
+      "image": "https://img.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705708800&semt=ais"
+    },
+    {
+      "id": "1590",
+      "name": "Alden Wolf",
+      "description": "Eligendi libero simi",
+      "price": "713",
+      "image": "https://img.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705708800&semt=ais"
+    },
+    {
+      "id": "6dad",
+      "name": "sfsasf",
+      "description": "Pariatur Temporibus",
+      "price": "2323",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/004/909/777/small/coding-logo-design-template-vector.jpg"
+    }
+  ]
+}
